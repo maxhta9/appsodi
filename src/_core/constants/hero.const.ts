@@ -1,4 +1,4 @@
-export const HOME_TITLE= "Take the first step towards your digital evolution";
-export const HOME_DESCRIPTION= "Unlock the potential of your organization with our innovative technology solutions. Partner with us to streamline processes, enhance productivity, and drive growth.";
+export const HOME_TITLE= "Da el primer paso hacia la evolución digital";
+export const HOME_DESCRIPTION= "Impulsamos el crecimiento digital de tu empresa, llevándola al siguiente nivel con calidad e innovación tecnológica.";
 export const SERVICE_TITLE= "Get ready to innovate";
 export const SERVICE_DESCRIPTION= "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...";
