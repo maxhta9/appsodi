@@ -1,0 +1,16 @@
+---
+interface Props {
+    linkTo?: string;
+    title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<button
+    title={`${Astro.props.title}`}
+    class="transition duration-500 px-6 py-2 rounded-xl bg-amber-600 text-white hover:bg-amber-800 hover:scale-105 hover:cursor-pointer"
+    type="button"
+>
+    <a href={`${Astro.props.linkTo}`}>{title}</a>
+</button>
