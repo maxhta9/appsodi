@@ -3,9 +3,12 @@ import "../styles/global.css";
 import Layout from "../layouts/Layout.astro";
 import Services from "../components/Services.astro";
 import Hero from "../components/Hero.astro";
+import Contact from "../components/CTA/Contact.astro";
+import { HOME_DESCRIPTION, HOME_TITLE } from "../_core/constants/hero.const";
 ---
 
 <Layout>
-	<Hero />
+	<Hero title=`${HOME_TITLE}` description=`${HOME_DESCRIPTION}`/>
 	<Services />
+	<Contact />
 </Layout>

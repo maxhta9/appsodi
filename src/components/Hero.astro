@@ -1,5 +1,10 @@
 ---
-import Button from "../shared/Button.astro";
+interface Props {
+    title: string;
+    description: string;
+}
+
+const { title, description } = Astro.props;
 ---
 
 <section
@@ -8,23 +13,22 @@ import Button from "../shared/Button.astro";
   <div class="max-w-xl sm:mx-auto lg:max-w-2xl">
     <div class="flex flex-col mb-16 sm:text-center sm:mb-0">
       <div
-        class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12"
+        class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12 transition-opacity"
       >
         <h1
           class="max-w-lg mb-6 font-sans text-4xl font-bold leading-none tracking-tight text-white sm:text-5xl md:mx-auto"
         >
-          Transforming Your Business with Cutting-Edge Technology
+          {title}
         </h1>
         <p class="text-base text-gray-50 md:text-lg">
-          Unlock the potential of your organization with our innovative
-          technology solutions. Partner with us to streamline processes, enhance
-          productivity, and drive growth.
+          {description}
         </p>
       </div>
       <div>
-        <Button title="Ver más" linkTo="services">
-
-        </Button>
+        <button type="button" class="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-amber-400 hover:bg-amber-800 focus:shadow-outline focus:outline-none cursor-pointer"
+        >
+          Conocer mas
+        </button>
       </div>
     </div>
   </div>
